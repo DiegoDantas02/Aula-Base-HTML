@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding-left: 200px;
+    padding-right: 190px;
+    min-width: 240px;
+    background-color: rgb(255, 255, 255);
+    color: #ffffff;
+}
+
+header,
+footer {/*rodapé*/
+    font-family: fantasy;/*fonte*/
+    font-size: large;
+    text-align: center;/*alinhamento*/
+    padding: 0.3em 0;
+    background-color: #000000;
+    color: rgb(255, 0, 85);
+    margin-left: -200px;
+    margin-right: -190px;
+}
+
+main,
+nav,
+aside {
+    position: relative;
+    float: left; /*Flutuar*/
+}
+
+main {
+    background: hsl(194, 100%, 50%);
+    padding: 0 20px;
+    width: 100%;
+}
+
+nav {
+    background: #014c63;
+    width: 180px;
+    padding: 0 10px;/*preenchimento*/
+    right: 240px;
+    margin-left: -100%;
+}
+
+aside {
+    background: rgb(1, 99, 129);
+    width: 130px;
+    padding: 0 10px;
+    margin-right: -100%;
+
+}
+
+footer {
+    clear: both; /*para a pagina não travar conforme movimento*/
+}
+/*deixar o canto travado esqueda*/
+* html nav {
+    left: 150px;
+}
